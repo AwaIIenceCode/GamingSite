@@ -187,6 +187,62 @@ body {
     color: #fff;
 }
 
+.services {
+    padding: 40px 20px;
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.services h2 {
+    font-size: 2em;
+    color: #ffd700;
+    margin-bottom: 20px;
+}
+
+.service-list {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.service-card {
+    background-color: rgba(34, 34, 34, 0.85);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s, background-color 0.3s;
+    text-align: center;
+}
+
+.service-card h3 {
+    font-size: 1.4em;
+    color: #ffd700;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: #ccc;
+}
+
+.service-card:hover {
+    background-color: #444;
+    transform: translateY(-10px);
+}
+
+
+@media (max-width: 1023px) {
+    .service-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 767px) {
+    .service-list {
+        grid-template-columns: 1fr;
+    }
+}
 @media (max-width: 1023px) {
     .profile-card {
         grid-template-columns: 1fr;
